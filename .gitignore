@@ -1,0 +1,21 @@
+# Dados brutos e intermediários — grandes demais para o Git, e 100% reproduzíveis
+# rodando o notebook (camada de Extract com coleta automática + fallback).
+data/bronze/
+data/silver/
+data/quarantine/
+
+# Banco local gerado a partir dos dados — regenerar com o notebook, não versionar binário.
+*.duckdb
+
+# Ambiente Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
